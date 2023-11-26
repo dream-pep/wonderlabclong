@@ -1,0 +1,19 @@
+<Project>
+	<PropertyGroup>
+		<FileLocation>$(MSBuildThisFileDirectory)bin\$(Configuration)\netstandard2.0\BuildTasks.dll</FileLocation>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="$(MSBuildThisFileDirectory)BuildTasks.csproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+	</ItemGroup>
+	<UsingTask
+		AssemblyFile="$(FileLocation)"
+		TaskName="BuildTask"/>
+	<Target Name="BuildTasks" AfterTargets="AfterCompile">
+		<BuildTask 
+			Output="@(IntermediateAssembly)"
+				Input="@(IntermediateAssembly)"
+				Temp="$(IntermediateOutputPath)BuildTasks\temp.dll"/>
+	</Target>
+</Project>

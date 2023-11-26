@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WonderLab", "WonderLab\WonderLab.csproj", "{CDF92DB8-E9B7-4202-8E74-58E72AAC08EF}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildTasks", "BuildTasks\BuildTasks.csproj", "{B1CF9B4A-92F2-47E8-8339-D15CECA0BFC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{CDF92DB8-E9B7-4202-8E74-58E72AAC08EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDF92DB8-E9B7-4202-8E74-58E72AAC08EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDF92DB8-E9B7-4202-8E74-58E72AAC08EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1CF9B4A-92F2-47E8-8339-D15CECA0BFC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1CF9B4A-92F2-47E8-8339-D15CECA0BFC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1CF9B4A-92F2-47E8-8339-D15CECA0BFC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1CF9B4A-92F2-47E8-8339-D15CECA0BFC5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

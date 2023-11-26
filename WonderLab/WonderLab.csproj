@@ -4,9 +4,11 @@
 		<TargetFramework>net8.0</TargetFramework>
 		<Nullable>enable</Nullable>
 		<LangVersion>latest</LangVersion>
-		<OutputType>WinExe</OutputType>
+		<OutputType>Exe</OutputType>
 		<IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+		<BuildTaskUseExternalMSBuild>true</BuildTaskUseExternalMSBuild>
 	</PropertyGroup>
+	<Import Project="..\BuildTasks\BuildTask.targets" />
 	<ItemGroup>
 		<None Remove="Assets\Images\normal.png" />
 		<None Remove="Assets\Fonts\SegoeFluentIcons.ttf" />

@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <LangVersion>preview</LangVersion>
+	  <OutputType>Library</OutputType>
+	  <NoWarn>$(NoWarn);NU1605;CS8632</NoWarn>
+	  <CopyLocalLockFileAssemblies Condition="$(TargetFramework) == 'netstandard2.0'">true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="BuildTask.targets" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Build.Framework" Version="15.1.548" PrivateAssets="All" />
+    <PackageReference Include="Mono.Cecil" Version="0.11.5" PrivateAssets="All" />
+  </ItemGroup>
+
+</Project>
